@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="st" class="com.sp.beans.Student">
+<constructor-arg value="1001"/>
+<constructor-arg value="Dibya"/>
+<constructor-arg value="55.77"/>
+</bean>
+
+<bean id="mk" class="com.sp.beans.Marks">
+<constructor-arg index ="2" value="20"/>
+<constructor-arg index ="1" value="30"/>
+<constructor-arg index ="0" value="40"/>
+</bean>
+
+<bean id="cs" class="com.sp.beans.Course">
+<constructor-arg name ="cname" value="Java"/>
+<constructor-arg name ="fee" value="3000"/>
+<constructor-arg name ="cid" value="1001"/>
+<constructor-arg name ="fname" value="NT"/>
+</bean>
+
+<bean id="gd" class="com.sp.beans.Grade">
+<constructor-arg value="Dibya" type="java.lang.String"/>
+<constructor-arg value="30" type="int"/>
+</bean>
+
+</beans>

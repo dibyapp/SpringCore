@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="sysDate" class="java.util.Date"/>
+<bean id="dobDate" class="java.util.Date">
+<property name="year" value="90"/>
+<property name="month" value="11"/>
+<property name="date" value="12"/>
+</bean>
+
+<bean id="stu" class="com.dib.beans.Student">
+
+<property name="stuNames">
+<list value-type="java.lang.String">
+<value>Dibya</value>
+<value>Ayesha</value>
+<value>Ittu</value>
+<value>Babu</value>
+</list>
+</property>
+<property name="dates">
+<list>
+<ref bean="sysDate"/>
+<ref bean="dobDate"/>
+<ref bean="sysDate"/>
+</list>
+</property>
+
+
+</bean>
+</beans>

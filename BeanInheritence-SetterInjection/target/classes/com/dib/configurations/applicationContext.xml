@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<bean id="baseCar" class="com.dib.bean.Car" abstract="true">
+<property name="color" value="red"></property>
+<property name="company" value="Suzuki"></property>
+<property name="fuelType" value="petrol"></property>
+<property name="model" value="swift"></property>
+<property name="variant" value="lxi"></property>
+<property name="engineCC" value="1200CC"></property>
+<property name="type" value="sedan"></property>
+</bean>
+
+<bean id="dibyaCar" class="com.dib.bean.Car" parent="baseCar">
+<property name="regNo" value="OD02AS5656"></property>
+<property name="ownerName" value="Dibya"></property>
+<property name="variant" value="vdi"></property>
+</bean>
+
+<bean id="ayeshaCar" class="com.dib.bean.Car" parent="baseCar">
+<property name="regNo" value="OD02AS9043"></property>
+<property name="ownerName" value="Ayesha"></property>
+<property name="variant" value="lxi"></property>
+<property name="color" value="pink"></property>
+</bean>
+
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<bean id="bfyEngg" class="com.dib.bean.Courses">
+<property name="subjects">
+<list>
+<value>Maths1</value>
+<value>ED</value>
+<value>Chemistry</value>
+<value>Physics</value>
+</list>
+</property>
+</bean>
+
+<bean id="ecfyEngg" class="com.dib.bean.Courses" parent="bfyEngg">
+<property name="subjects">
+<list merge="true">
+<value>C</value>
+<value>OS</value>
+</list>
+</property>
+</bean>
+
+<bean id="mechEngg" class="com.dib.bean.Courses" parent="bfyEngg">
+<property name="subjects">
+<list merge="true">
+<value>AC</value>
+<value>BC</value>
+</list>
+</property>
+</bean>
+</beans>

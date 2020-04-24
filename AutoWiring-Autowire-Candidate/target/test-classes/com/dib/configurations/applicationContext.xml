@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="constructor" default-autowire-candidates="tp,tp1" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="tp" class="com.dib.beans.TourPlan" autowire-candidate="default">
+<property name="places">
+<array>
+<value>Puri</value>
+<value>Konark</value>
+<value>Patia</value>
+</array>
+</property>
+</bean>
+
+<bean id="tp1" class="com.dib.beans.TourPlan" primary="true">
+<property name="places">
+<array>
+<value>Goa</value>
+<value>Manglore</value>
+<value>Pondichery</value>
+</array>
+</property>
+</bean>
+
+<bean id="agent" class="com.dib.beans.TravelAgent" autowire="constructor"/>
+
+</beans>
