@@ -3,22 +3,22 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/IOCLibrary"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/commons-logging-1.2.1.1.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-aop-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-beans-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-context-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-core-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-expression-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-jdbc-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-jms-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-messaging-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-orm-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-oxm-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-test-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-tx-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-web-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-webflux-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-webmvc-5.2.3.RELEASE.jar"/>
-	<classpathentry kind="lib" path="A:/Projects/IOCLibrary/spring-websocket-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/commons-logging-1.2.1.1.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-aop-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-beans-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-context-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-core-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-expression-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-jdbc-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-jms-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-messaging-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-orm-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-oxm-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-test-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-tx-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-web-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-webflux-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-webmvc-5.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="A:/Projects/Spring/IOCLibrary/spring-websocket-5.2.3.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
