@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+<!-- <bean id="dob" class="java.util.Date">
+<property name="year" value="90"/>
+<property name="month" value="11"/>
+<property name="date" value="20"/>
+</bean> -->
+
+<bean id="doc" class="java.util.Calendar" factory-method="getInstance"/>
+
+<bean id="crs" class="com.dib.beans.Course">
+<property name="courseId" value="1001"/>
+<property name="courseName" value="Android"/>
+<qualifier value="c1"></qualifier>
+</bean>
+
+<bean id="crs1" class="com.dib.beans.Course">
+<property name="courseId" value="1002"/>
+<property name="courseName" value="ReactJS"/>
+<qualifier value="c2"></qualifier>
+</bean>
+
+<bean id="stud" class="com.dib.beans.Student">
+<property name="sno" value="1001"/>
+<property name="name" value="Dibya"/>
+</bean>
+
+<context:annotation-config/>
+</beans>
