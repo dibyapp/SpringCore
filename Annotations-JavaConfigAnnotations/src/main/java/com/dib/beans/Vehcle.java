@@ -1,19 +1,21 @@
 package com.dib.beans;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-@Component
-@Scope("prototype")
+@Named("vehcle") //Alternate to @Component makes class as Spring beans
 @PropertySource("com/dib/commons/info.properties")
 public class Vehcle {
 	@Value("${vehcle.type}")
 	private String type;
-
-	@Autowired
+	
+//	@Autowired [Spring Supplied]
+//	@Inject //Alternate to @Autowired [JEE Supplied]
+	@Named("dEngine") //Works like @Primary to solve ambiguity errors
+	@Resource  //Alternate to @Autowired [JSE JDK Supplied]
 	private Engine engg;
 
 	public void journey(String startPlace, String endPlace) {
