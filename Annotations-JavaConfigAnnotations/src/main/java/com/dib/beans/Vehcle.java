@@ -4,9 +4,11 @@ import javax.annotation.Resource;
 import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.PropertySource;
 
 @Named("vehcle") //Alternate to @Component makes class as Spring beans
+@Lazy //To enable lazy-init on singleton scope beans
 @PropertySource("com/dib/commons/info.properties")
 public class Vehcle {
 	@Value("${vehcle.type}")
