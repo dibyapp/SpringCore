@@ -10,8 +10,10 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.dib.config.AppConfig;
 
 public class test {
 
@@ -26,7 +28,7 @@ public class test {
 	    //create Locale object
 	    locale=new Locale(args[0],args[1]);
 	    //create IOC container
-	     ctx=new ClassPathXmlApplicationContext("com/dib/configurations/applicationContext.xml");
+	     ctx=new AnnotationConfigApplicationContext(AppConfig.class);
 	    // String Labels by submitting keys
 	    lsno=ctx.getMessage("sno.label", new Object[] {}, "msg1", locale);
 	    lsname=ctx.getMessage("sname.label", new Object[] {}, "msg2", locale);
